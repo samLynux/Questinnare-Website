@@ -1,0 +1,145 @@
+
+<html>
+<head>
+	<title>Soal</title>
+	
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+
+<div id="myDIV">
+<h2>Kerjakan dengan waktu yang ditentukan! </h2> <h2 id="timer"> 5 M </h2>
+<button class="btn btn-custom btn-lg btn-custom3" onclick="submitTest()">Submit</button> 
+</div>
+
+<body class="soalPage" id="soalPage">
+
+	
+	<header id="header">
+	  <div class="intro">
+	  <button class="myButton" onclick="myFunction()"> <i> Press to Hide/Show Time and Submit Button </i> </button>
+		<div class="overlay">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-md-8 col-md-offset-2 intro-text">
+				<div id="soal" class ="text-center">
+				
+					<h3 style="background-color:white"> Kenapa ? <h3>
+
+					
+
+					<button id="buttonA" class="btn btn-custom1 btn-lg page-scroll"> A.    </button><br> <br>
+					<button id="buttonB" class="btn btn-custom1 btn-lg page-scroll"> B.  </button><br> <br> 
+					<button id="buttonC" class="btn btn-custom1 btn-lg page-scroll"> C.      </button><br> <br> 
+					<button id="buttonD" class="btn btn-custom1 btn-lg page-scroll"> D.   </button><br> <br>
+			
+			
+			
+				</div>
+				<div  id="SubmitButton">
+					<button onclick="soal(--idx)" class="nextQ btn-custom3">Previous Question </button>  
+					<button onclick="soal(++idx)" class="nextQ btn-custom3">Next Question</button> 
+					<br> <br> 
+					<button onclick="soal(0)" id="button1" class="nextQ btn btn-lg page-scroll">1</button>  
+					<button onclick="soal(1)" id="button2" class="nextQ btn btn-lg page-scroll">2</button>  
+					<button onclick="soal(2)" id="button3" class="nextQ btn btn-lg page-scroll">3</button>  
+					<button onclick="soal(3)" id="button4" class="nextQ btn btn-lg page-scroll">4</button>  
+					<button onclick="soal(4)" id="button5" class="nextQ btn btn-lg page-scroll">5</button>  
+					<button onclick="soal(5)" id="button6" class="nextQ btn btn-lg page-scroll">6</button>  
+					<button onclick="soal(6)" id="button7" class="nextQ btn btn-lg page-scroll">7</button>  
+					<button onclick="soal(7)" id="button8" class="nextQ btn btn-lg page-scroll">8</button>  
+					<button onclick="soal(8)" id="button9" class="nextQ btn btn-lg page-scroll">9</button>  
+					<button onclick="soal(9)" id="button10" class="nextQ btn btn-lg page-scroll">10</button>
+					<br> <br> 					
+					<button onclick="soal(10)" id="button11" class="nextQ btn btn-lg page-scroll">11</button>  
+					<button onclick="soal(11)" id="button12" class="nextQ btn btn-lg page-scroll">12</button>  
+					<button onclick="soal(12)" id="button13" class="nextQ btn btn-lg page-scroll">13</button>  
+					<button onclick="soal(13)" id="button14" class="nextQ btn btn-lg page-scroll">14</button>  
+					<button onclick="soal(14)" id="button15" class="nextQ btn btn-lg page-scroll">15</button>  
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</header>
+
+	
+
+<div id="team" class="text-center">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 section-title">
+      <h2>Quotes. </h2>
+      <p> The greats wish you luck !  </p>
+    </div>
+    <div id="row" ng-app="myApp" ng-controller="myCtrl">
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/hawking.jpg" alt="..." class="team-img">
+          <div class="caption" >
+            <h4 ng-bind="sh"></h4>
+            <p><i> Intellegence is the ability to adapt to change. </i> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/mandela.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h4 ng-bind="nm"></h4>
+            <p> <i> Education is the most powerful weapon which you can use to change the world.</i> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/messi.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h4 ng-bind="lm"></h4>
+            <p><i> You can overcome anything, if and only if you love something enough.</i></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/eminem.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h4 ng-bind="em"></h4>
+            <p><i>You can do anything you set your mind to. </i> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	
+
+<div id="footer">
+  <div class="container text-center">
+    <p>&copy; Project Pengantar Teknologi Internet Genap 2019. Created by Djasen, Raja, Samuel and Yuan </a></p>
+  </div>
+</div>
+	
+	
+	
+	
+</body>
+</html>
+
+
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In</title>
+	<link rel="stylesheet" type="text/css"  href="file/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="file/fonts/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="file/css/style.css">
+	<link rel="stylesheet" type="text/css" href="file/css/login.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="file/login.js"></script>
+	
+	
+</head>
+<body class="loginPage">
+	
+<div id="services" class="text-center">
+  <div class="container">
+    <div class="section-title">
+      <h2>Feel Smart ?</h2>
+      <p> Then what are you waiting for? Login and see how smart you are ! </p>
+    </div>
+	
+	<button class="loginButton btn-custom5" onclick="dialogOpen()">LOGIN</button> <br> <br> <br> <br>
+
+    <div class="row">
+      <div class="col-md-4"> <i class="fa fa-language"></i>
+        <div class="service-desc">
+          <h3>Question about Culture</h3>
+          <p>Culture is the arts elevated to a set of beliefs. See how well you know them! </p>
+        </div>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-plane"></i>
+        <div class="service-desc">
+          <h3>Question about Critical Thinking </h3>
+          <p>When everything seems to be going against you, remember that the airplane takes off against the wind, not with it. Don't give up even if it's hard !</p>
+        </div>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-pie-chart"></i>
+        <div class="service-desc">
+          <h3> Mathematical and Logical Questions </h3>
+          <p>Mathemathics is the queen of the science .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="dialog-form" title="Login" onload="login()">
+		<form class="form">
+			Name
+			<input id = "email" type = "text" name = "email" class = "text">
+			Password
+			<input id = "password" type = "password" name = "password" class = "text">
+		</form>
+</div>
+	
+<div id="footer">
+  <div class="container text-center">
+    <p>&copy; Project Pengantar Teknologi Internet Genap 2019. Created by Djasen, Raja, Sam and Yuan </a></p>
+  </div>
+</div>
+	
+	
+
+</body>
+</html>
